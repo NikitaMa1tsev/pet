@@ -1,0 +1,12 @@
+{% comment %} {% extends 'base.html' %} {% block content %} {% endcomment %}
+
+<div class="center_block">
+	<h1>Тестовая страница</h1>
+
+	<form action="" method="post">
+		{% csrf_token%} {{ form.as_p }}
+		<p id="btn-submit"><button type="submit">Начать тест</button></p>
+	</form>
+</div>
+
+{% comment %} {% endblock %} {% endcomment %}
